@@ -1,45 +1,18 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/">
   <channel>
-    <title>我的博客</title>
-    <link>https://zwlzls.github.io/</link>
-    <description>Recent content on 我的博客</description>
+    <title>工具 on 我的博客</title>
+    <link>https://zwlzls.github.io/categories/%E5%B7%A5%E5%85%B7/</link>
+    <description>Recent content in 工具 on 我的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Jan 2025 23:41:00 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jan 2025 23:41:00 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/categories/%E5%B7%A5%E5%85%B7/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Git01</title>
       <link>https://zwlzls.github.io/posts/git01/</link>
       <pubDate>Tue, 07 Jan 2025 23:41:00 +0800</pubDate>
       
       <guid>https://zwlzls.github.io/posts/git01/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Python00</title>
-      <link>https://zwlzls.github.io/posts/python00/</link>
-      <pubDate>Tue, 07 Jan 2025 22:12:38 +0800</pubDate>
-      
-      <guid>https://zwlzls.github.io/posts/python00/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Java00</title>
-      <link>https://zwlzls.github.io/posts/java00/</link>
-      <pubDate>Tue, 07 Jan 2025 22:12:22 +0800</pubDate>
-      
-      <guid>https://zwlzls.github.io/posts/java00/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>SQL00</title>
-      <link>https://zwlzls.github.io/posts/sql00/</link>
-      <pubDate>Tue, 07 Jan 2025 22:12:09 +0800</pubDate>
-      
-      <guid>https://zwlzls.github.io/posts/sql00/</guid>
       <description></description>
     </item>
     
@@ -78,18 +51,6 @@ Git 是把数据看作是对小型文件系统的一组快照。 每次提交更
 Linux系统里面账户，密码，群组目录
 /etc/passwd：账户信息 /etc/shadow：账户密码，不过是加密了的 /etc/group：所有组名 </description>
     </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://zwlzls.github.io/about/</link>
-      <pubDate>Sat, 04 Jan 2025 22:54:28 +0800</pubDate>
-      
-      <guid>https://zwlzls.github.io/about/</guid>
-      <description>个人介绍 由于自己总会忘记一些知识，如果不去记录也容易迷茫，记录可让自己变得踏实些，学习内容依据公开内容，也可以系统性知识建立，固有此网站，网站诞生于2024-12-25，此网站与未来就业公司无关。
-如果有人看到，本网站内容不一定对，即使过往知识也会随时间更改，希望不要以此为核心，以官网为核心，如果有文章涉及侵权等等行为，联系QQ：2994336613，回复不一定及时，但应该都是本人自己写作。
-祝愿看到此网站的人都可以 美好的事情即将发送</description>
-    </item>
-    
     
   </channel>
 </rss>

@@ -6,14 +6,24 @@
     <description>Recent content in Git on 我的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 05 Jan 2025 15:03:12 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 07 Jan 2025 23:41:00 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Git01</title>
+      <link>https://zwlzls.github.io/posts/git01/</link>
+      <pubDate>Tue, 07 Jan 2025 23:41:00 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/git01/</guid>
+      <description></description>
+    </item>
+    
     <item>
       <title>Git00</title>
       <link>https://zwlzls.github.io/posts/git00/</link>
       <pubDate>Sun, 05 Jan 2025 15:03:12 +0800</pubDate>
       
       <guid>https://zwlzls.github.io/posts/git00/</guid>
-      <description>git学习 安装及配置 ：Git · Pro Git 第二版 简体中文
+      <description>git基本操作 由于学习更偏重点性记录或自己使用角度，深入度可能不足，详细见https://gitee.com/progit/index.html
+安装及配置 ：Git · Pro Git 第二版 简体中文
 起步 版本控制 ： 记录一个或若干文件内容变化，以便将来查阅特定版本修订情况的系统
 本地版本控制
 eg : RCS工作原理是在硬盘上保存补丁集（补丁是指文件修订前后的变化）；通过应用所有的补丁，可以重新计算出各个版本的文件内容。 集中版本控制 : 不同系统上的开发者协同工作
