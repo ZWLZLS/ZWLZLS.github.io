@@ -6,7 +6,25 @@
     <description>Recent content in Posts on 我的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Jan 2025 23:41:00 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 17 Jan 2025 15:14:04 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Python02</title>
+      <link>https://zwlzls.github.io/posts/python02/</link>
+      <pubDate>Fri, 17 Jan 2025 15:14:04 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/python02/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python01</title>
+      <link>https://zwlzls.github.io/posts/python01/</link>
+      <pubDate>Fri, 17 Jan 2025 15:13:58 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/python01/</guid>
+      <description>Python中级使用 函数 </description>
+    </item>
+    
     <item>
       <title>Git01</title>
       <link>https://zwlzls.github.io/posts/git01/</link>
@@ -36,19 +54,16 @@ git diff --check，它将会找到可能的空白错误并将它们为你列出�
       <pubDate>Tue, 07 Jan 2025 22:12:38 +0800</pubDate>
       
       <guid>https://zwlzls.github.io/posts/python00/</guid>
-      <description>Python基础语法 Python基础 # print absolute value of an integer: a = 100 if a &amp;gt;= 0: print(a) else: print(-a) python的语法比较简单
-#开头的语句是注释 当语句以冒号:结尾时，缩进的语句视为代码块 缩进实用四个空格的缩进 数据类型
-整数：可以处理任意大小，用十六进制表示比较方便0xff00
-浮点数：小数，对于很大或很小的浮点数，就必须用科学计数法
-1.23x109是1.23e9，或者12.3e8，0.000012可以写成1.2e-5 字符串：以单引号&#39;或双引号&amp;quot;括起来的任意文本
-字符串内部既包含&#39;又包含&amp;quot;怎么办？可以用转义字符\来标识
-比如\n表示换行，\t表示制表符，字符\本身也要转义，所以\\表示的字符就是\
-r&#39;&#39;表示&#39;&#39;内部的字符串默认不转义
-\n写在一行里不好阅读，为了简化，Python允许用&#39;&#39;&#39;...&#39;&#39;&#39;的格式表示多行内容
-&amp;gt;&amp;gt;&amp;gt; print(&amp;#39;&amp;#39;&amp;#39;line1 ... line2 ... line3&amp;#39;&amp;#39;&amp;#39;) line1 line2 line3 布尔值
-以直接用True、False表示布尔值（请注意大小写） 布尔值可以用and、or和not运算 空值
-空值是Python里一个特殊的值，用None表示 变量：
-变量名必须是大小写英文、数字和_的组合，且不能用数字开头 等号=是赋值语句，可以把任意数据类型赋值给变量，同一个变量可以反复赋值，而且可以是不同类型的变量 这种变量本身类型不固定的语言称之为动态语言，与之对应的是静态语言。静态语言在定义变量时必须指定变量类型，如果赋值的时候类型不匹配，就会报错 </description>
+      <description>Python基础语法 Python基础 # print absolute value of an integer: a = 100 if a &amp;gt;= 0: print(a) else: print(-a) Python的语法比较简单 #开头的语句是注释
+当语句以冒号:结尾时，缩进的语句视为代码块
+缩进实用四个空格的缩进
+议input
+用input()读取用户的输入
+birth = input(&amp;#39;birth: &amp;#39;) if birth &amp;lt; 2000: print(&amp;#39;00前&amp;#39;) TypeError: unorderable types: str() &amp;gt; int() 因为input()返回的数据类型是str，str不能直接和整数比较，必须先把str转换成整数
+s = input(&amp;#39;birth: &amp;#39;) birth = int(s) if birth &amp;lt; 2000: print(&amp;#39;00前&amp;#39;) 可以得到正确地结果
+议不可变对象：str是不变对象，list是可变对象
+对于可变对象，比如list
+&amp;gt;&amp;gt;&amp;gt; a = [&amp;#39;c&amp;#39;, &amp;#39;b&amp;#39;, &amp;#39;a&amp;#39;] &amp;gt;&amp;gt;&amp;gt; a.sort() &amp;gt;&amp;gt;&amp;gt; a [&amp;#39;a&amp;#39;, &amp;#39;b&amp;#39;, &amp;#39;c&amp;#39;] 对于不可变对象，比如str</description>
     </item>
     
     <item>
