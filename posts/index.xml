@@ -22,7 +22,12 @@
       <pubDate>Fri, 17 Jan 2025 15:13:58 +0800</pubDate>
       
       <guid>https://zwlzls.github.io/posts/python01/</guid>
-      <description>Python中级使用 函数 </description>
+      <description>Python中级使用 函数 调用函数
+参数可以多个 &amp;gt;&amp;gt;&amp;gt; max(1, 2) 2 &amp;gt;&amp;gt;&amp;gt; max(2, 3, 1, -5) 3 参数类型需要一致 &amp;gt;&amp;gt;&amp;gt; abs(&amp;#39;a&amp;#39;) TypeError: bad operand type for abs(): &amp;#39;str&amp;#39; 函数调用 &amp;gt;&amp;gt;&amp;gt; abs(100) 100 &amp;gt;&amp;gt;&amp;gt; abs(-20) 20 数据类型转换
+&amp;gt;&amp;gt;&amp;gt; int(&amp;#39;123&amp;#39;) 123 &amp;gt;&amp;gt;&amp;gt; int(12.34) 12 &amp;gt;&amp;gt;&amp;gt; float(&amp;#39;12.34&amp;#39;) 12.34 &amp;gt;&amp;gt;&amp;gt; str(1.23) &amp;#39;1.23&amp;#39; &amp;gt;&amp;gt;&amp;gt; str(100) &amp;#39;100&amp;#39; &amp;gt;&amp;gt;&amp;gt; bool(1) True &amp;gt;&amp;gt;&amp;gt; bool(&amp;#39;&amp;#39;) False 函数名其实就是指向一个函数对象的引用，完全可以把函数名赋给一个变量
+&amp;gt;&amp;gt;&amp;gt; a = abs # 变量a指向abs函数 &amp;gt;&amp;gt;&amp;gt; a(-1) # 所以也可以通过a调用abs函数 1 定义函数
+要使用def语句，依次写出函数名、括号、括号中的参数和冒号:，然后，在缩进块中编写函数体，函数的返回值用return语句返回
+def my_abs(x): if x &amp;gt;= 0: return x else: return -x print(my_abs(-99)) 空函数：定义一个什么事也不做的空函数，可以用pass语句</description>
     </item>
     
     <item>
