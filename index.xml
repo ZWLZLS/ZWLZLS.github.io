@@ -13,7 +13,16 @@
       <pubDate>Fri, 17 Jan 2025 15:14:04 +0800</pubDate>
       
       <guid>https://zwlzls.github.io/posts/python02/</guid>
-      <description></description>
+      <description>Python高级 面向对象编程 以一个例子来说明面向过程和面向对象在程序流程上的不同之处
+假设我们要处理学生的成绩表，表示学生的成绩，面向过程的程序可以用dict表示：
+std1 = { &amp;#39;name&amp;#39;: &amp;#39;Michael&amp;#39;, &amp;#39;score&amp;#39;: 98 } std2 = { &amp;#39;name&amp;#39;: &amp;#39;Bob&amp;#39;, &amp;#39;score&amp;#39;: 81 } 而处理学生成绩可以通过函数实现，比如打印学生的成绩：
+def print_score(std): print(&amp;#39;%s: %s&amp;#39; % (std[&amp;#39;name&amp;#39;], std[&amp;#39;score&amp;#39;])) 面向对象的程序设计思想，我们首选思考的不是程序的执行流程，而是Student这种数据类型应该被视为一个对象，这个对象拥有name和score这两个属性（Property）。如果要打印一个学生的成绩，首先必须创建出这个学生对应的对象，然后，给对象发一个print_score消息，让对象自己把自己的数据打印出来
+class Student(object): def __init__(self, name, score): self.name = name self.score = score def print_score(self): print(&amp;#39;%s: %s&amp;#39; % (self.name, self.score)) 给对象发消息实际上就是调用对象对应的关联函数，我们称之为对象的方法（Method）。面向对象的程序写出来就像这样：
+bart = Student(&amp;#39;Bart Simpson&amp;#39;, 59) lisa = Student(&amp;#39;Lisa Simpson&amp;#39;, 87) bart.print_score() lisa.print_score() 类和实例 类是抽象的模板，实例是类创建的一个个具体的“对象”
+和普通的函数相比，在类中定义的函数只有一点不同，就是第一个参数永远是实例变量self，并且，调用时，不用传递该参数
+定义类是通过class关键字：
+class Student(object): pass class后面紧接着是类名，即Student，类名通常是大写开头的单词，紧接着是(object)，表示该类是从哪个类继承下来的，通常，没有合适的继承类，就使用object类，是所有类最终都会继承的类
+由于类可以起到模板的作用，因此，在创建实例的时候，把我们认为必须绑定的属性强制填写进去。通过定义一个特殊的__init__方法，在创建实例的时候，就把name，score等属性绑上去：</description>
     </item>
     
     <item>
