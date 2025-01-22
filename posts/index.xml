@@ -6,9 +6,36 @@
     <description>Recent content in Posts on 我的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 17 Jan 2025 15:14:04 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 22 Jan 2025 22:06:05 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Python02</title>
+      <title>Java03</title>
+      <link>https://zwlzls.github.io/posts/java03/</link>
+      <pubDate>Wed, 22 Jan 2025 22:06:05 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/java03/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java02</title>
+      <link>https://zwlzls.github.io/posts/java02/</link>
+      <pubDate>Wed, 22 Jan 2025 22:06:01 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/java02/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Java01</title>
+      <link>https://zwlzls.github.io/posts/java01/</link>
+      <pubDate>Wed, 22 Jan 2025 22:05:54 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/java01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Python高级</title>
       <link>https://zwlzls.github.io/posts/python02/</link>
       <pubDate>Fri, 17 Jan 2025 15:14:04 +0800</pubDate>
       
@@ -26,7 +53,7 @@ class Student(object): pass class后面紧接着是类名，即Student，类名�
     </item>
     
     <item>
-      <title>Python01</title>
+      <title>Python中级</title>
       <link>https://zwlzls.github.io/posts/python01/</link>
       <pubDate>Fri, 17 Jan 2025 15:13:58 +0800</pubDate>
       
@@ -61,7 +88,7 @@ git diff --check，它将会找到可能的空白错误并将它们为你列出�
     </item>
     
     <item>
-      <title>Python00</title>
+      <title>Python基本</title>
       <link>https://zwlzls.github.io/posts/python00/</link>
       <pubDate>Tue, 07 Jan 2025 22:12:38 +0800</pubDate>
       
@@ -88,7 +115,7 @@ s = input(&amp;#39;birth: &amp;#39;) birth = int(s) if birth &amp;lt; 2000: prin
     </item>
     
     <item>
-      <title>SQL00</title>
+      <title>SQL语法</title>
       <link>https://zwlzls.github.io/posts/sql00/</link>
       <pubDate>Tue, 07 Jan 2025 22:12:09 +0800</pubDate>
       
