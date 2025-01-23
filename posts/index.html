@@ -35,7 +35,14 @@ birth = input('birth: ') if birth &lt; 2000: print('00前') TypeError: unorderab
 s = input('birth: ') birth = int(s) if birth &lt; 2000: print('00前') 可以得到正确地结果
 议不可变对象：str是不变对象，list是可变对象
 对于可变对象，比如list
->>> a = ['c', 'b', 'a'] >>> a.sort() >>> a ['a', 'b', 'c'] 对于不可变对象，比如str...</p></section><a class=entry-link aria-label="post link to Python基本" href=https://zwlzls.github.io/posts/python00/></a></article><article class=post-entry><header class=entry-header><h2>Java00</h2></header><section class=entry-content><p></p></section><a class=entry-link aria-label="post link to Java00" href=https://zwlzls.github.io/posts/java00/></a></article><article class=post-entry><header class=entry-header><h2>SQL语法</h2></header><section class=entry-content><p>SQL基本使用 关系型数据库 数据库：保存用户数据
+>>> a = ['c', 'b', 'a'] >>> a.sort() >>> a ['a', 'b', 'c'] 对于不可变对象，比如str...</p></section><a class=entry-link aria-label="post link to Python基本" href=https://zwlzls.github.io/posts/python00/></a></article><article class=post-entry><header class=entry-header><h2>Java00</h2></header><section class=entry-content><p>Java基础 程序流程 Java简易程序
+public class Hello { public static void main(String[] args) { System.out.println("Hello, world!"); } } 定义称为class（类），这里的类名是Hello，大小写敏感，class用来定义一个类，public表示这个类是公开的，public、class都是Java的关键字，必须小写，Hello是类的名字，按照习惯，首字母H要大写。而花括号{}中间则是类的定义 方法是可执行的代码块，一个方法除了方法名main，还有用()括起来的方法参数，这里的main方法有一个参数，参数类型是String[]，参数名是args，public、static用来修饰方法，这里表示它是一个公开的静态方法，void是方法的返回类型，而花括号{}中间的就是方法的代码 方法的代码每一行用;结束 把代码保存为文件时，文件名必须是Hello.java，而且文件名也要注意大小写 运行Java程序
+需要先用javac把Hello.java编译成字节码文件Hello.class，然后，用java命令执行这个字节码文件： ┌──────────────────┐ │ Hello.java │◀── source code └──────────────────┘ │ compile ▼ ┌──────────────────┐ │ Hello.class │◀── byte code └──────────────────┘ │ execute ▼ ┌──────────────────┐ │ Run on JVM │ └──────────────────┘ 第一步，在保存Hello.java的目录下执行命令javac Hello.java：
+$ javac Hello.java 第二步，执行Hello.class，使用命令java Hello（注意不是java Hello.class）：
+$ java Hello Hello, world! 注释
+第一种是单行注释，以双斜线开头，直到这一行的结尾结束：
+// 这是注释 而多行注释以/*星号开头，以*/结束，可以有多行：
+/* 这是注释 */ 特殊的多行注释，以/**开头，以*/结束，如果有多行，每行通常以星号开头：...</p></section><a class=entry-link aria-label="post link to Java00" href=https://zwlzls.github.io/posts/java00/></a></article><article class=post-entry><header class=entry-header><h2>SQL语法</h2></header><section class=entry-content><p>SQL基本使用 关系型数据库 数据库：保存用户数据
 随着应用程序的功能越复杂，数据量越大，管理这些数据就成了大问题 读写文件并解析出数据需要大量重复代码； 从成千上万的数据中快速查询出指定数据需要复杂的逻辑 数据模型
 层次模型：以“上下级”的层次关系来组织数据的一种方式，看起来就像一颗树 网状模型：每个数据节点和其他很多节点都连接起来，看起来就像很多城市之间的路网 关系模型：数据看作是一个二维表格，任何数据都可以通过行号+列号来唯一确定，看起来就是一个Excel表 常见数据类型
 名称 类型 说明 INT 整型 4字节整数类型，范围约+/-21亿 BIGINT 长整型 8字节整数类型，范围约+/-922亿亿 REAL 浮点型 4字节浮点数，范围约+/-1038 DOUBLE 浮点型 8字节浮点数，范围约+/-10308 DECIMAL(M,N) 高精度小数 由用户指定精度的小数，例如，DECIMAL(20,10)表示一共20位，其中小数10位，通常用于财务计算 CHAR(N) 定长字符串 存储指定长度的字符串，例如，CHAR(100)总是存储100个字符的字符串 VARCHAR(N) 变长字符串 存储可变长度的字符串，例如，VARCHAR(100)可以存储0~100个字符的字符串 BOOLEAN 布尔类型 存储True或者False DATE 日期类型 存储日期，例如，2018-06-22 TIME 时间类型 存储时间，例如，12:20:59 DATETIME 日期和时间类型 存储日期+时间，例如，2018-06-22 12:20:59 SQL
