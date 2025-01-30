@@ -26,12 +26,20 @@
     </item>
     
     <item>
-      <title>Java01</title>
+      <title>Java中级</title>
       <link>https://zwlzls.github.io/posts/java01/</link>
       <pubDate>Wed, 22 Jan 2025 22:05:54 +0800</pubDate>
       
       <guid>https://zwlzls.github.io/posts/java01/</guid>
-      <description></description>
+      <description>面向对象基础 理解： class是一种对象模版，定义了如何创建实例，class本身就是一种数据类型
+instance是对象实例，instance是根据class创建的实例，可以创建多个instance，每个instance类型相同，但各自属性可能不相同
+定义class
+创建一个类，例如，给这个类命名为Person，就是定义一个class：
+class Person { public String name; public int age; } class Book { public String name; public String author; public String isbn; public double price; } 创建实例
+定义了class，只是定义了对象模版，而要根据对象模版创建出真正的对象实例，必须用new操作符
+Person ming = new Person(); 区分Person ming是定义Person类型的变量ming，而new Person()是创建Person实例
+ming.name = &amp;#34;Xiao Ming&amp;#34;; // 对字段name赋值 ming.age = 12; // 对字段age赋值 System.out.println(ming.name); // 访问字段name Person hong = new Person(); hong.name = &amp;#34;Xiao Hong&amp;#34;; hong.age = 15; 上述两个变量分别指向两个不同的实例，它们在内存中的结构如下：
+┌──────────────────┐ ming ──────▶│Person instance │ ├──────────────────┤ │name = &amp;#34;Xiao Ming&amp;#34;│ │age = 12 │ └──────────────────┘ ┌──────────────────┐ hong ──────▶│Person instance │ ├──────────────────┤ │name = &amp;#34;Xiao Hong&amp;#34;│ │age = 15 │ └──────────────────┘ 方法 意义：</description>
     </item>
     
     <item>
@@ -40,14 +48,10 @@
       <pubDate>Tue, 07 Jan 2025 22:12:22 +0800</pubDate>
       
       <guid>https://zwlzls.github.io/posts/java00/</guid>
-      <description>Java基础 程序流程 Java简易程序
-public class Hello { public static void main(String[] args) { System.out.println(&amp;#34;Hello, world!&amp;#34;); } } 定义称为class（类），这里的类名是Hello，大小写敏感，class用来定义一个类，public表示这个类是公开的，public、class都是Java的关键字，必须小写，Hello是类的名字，按照习惯，首字母H要大写。而花括号{}中间则是类的定义 方法是可执行的代码块，一个方法除了方法名main，还有用()括起来的方法参数，这里的main方法有一个参数，参数类型是String[]，参数名是args，public、static用来修饰方法，这里表示它是一个公开的静态方法，void是方法的返回类型，而花括号{}中间的就是方法的代码 方法的代码每一行用;结束 把代码保存为文件时，文件名必须是Hello.java，而且文件名也要注意大小写 运行Java程序
-需要先用javac把Hello.java编译成字节码文件Hello.class，然后，用java命令执行这个字节码文件： ┌──────────────────┐ │ Hello.java │◀── source code └──────────────────┘ │ compile ▼ ┌──────────────────┐ │ Hello.class │◀── byte code └──────────────────┘ │ execute ▼ ┌──────────────────┐ │ Run on JVM │ └──────────────────┘ 第一步，在保存Hello.java的目录下执行命令javac Hello.java：
-$ javac Hello.java 第二步，执行Hello.class，使用命令java Hello（注意不是java Hello.class）：
-$ java Hello Hello, world! 注释
-第一种是单行注释，以双斜线开头，直到这一行的结尾结束：
-// 这是注释 而多行注释以/*星号开头，以*/结束，可以有多行：
-/* 这是注释 */ 特殊的多行注释，以/**开头，以*/结束，如果有多行，每行通常以星号开头：</description>
+      <description>Java基础 程序流程 Java默认初始值与无默认区分
+public class DefaultValuesExample { int instanceVar; // 默认值: 0 static int staticVar; // 默认值: 0 int[] array = new int[5]; // 数组元素默认值: 0 public void method() { int localVar; // 局部变量，必须显式初始化 // System.out.println(localVar); // 编译错误 } public static void main(String[] args) { DefaultValuesExample example = new DefaultValuesExample(); System.out.println(&amp;#34;Instance variable: &amp;#34; + example.instanceVar); System.out.println(&amp;#34;Static variable: &amp;#34; + staticVar); System.out.println(&amp;#34;Array element: &amp;#34; + example.array[0]); } } 局部变量必须有显式初始化
+Java简易程序
+public class Hello { public static void main(String[] args) { System.</description>
     </item>
     
   </channel>
