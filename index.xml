@@ -17,12 +17,16 @@
     </item>
     
     <item>
-      <title>Java02</title>
+      <title>Java高级</title>
       <link>https://zwlzls.github.io/posts/java02/</link>
       <pubDate>Wed, 22 Jan 2025 22:06:01 +0800</pubDate>
       
       <guid>https://zwlzls.github.io/posts/java02/</guid>
-      <description></description>
+      <description>异常处理 Java的异常 调用方获取调用失败的信息
+约定返回错误码
+处理一个文件，如果返回0，表示成功，返回其他整数，表示约定的错误码：
+int code = processFile(&amp;#34;C:\\test.txt&amp;#34;); if (code == 0) { // ok: } else { // error: switch (code) { case 1: // file not found: case 2: // no read permission: default: // unknown error: } } 语言层面上提供一个异常处理机制、
+try { String s = processFile(“C:\\test.txt”); // ok: } catch (FileNotFoundException e) { // file not found: } catch (SecurityException e) { // no read permission: } catch (IOException e) { // io error: } catch (Exception e) { // other error: } 异常是class，它的继承关系如下：</description>
     </item>
     
     <item>
