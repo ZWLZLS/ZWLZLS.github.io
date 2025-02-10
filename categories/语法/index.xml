@@ -8,12 +8,17 @@
     <language>en</language>
     <lastBuildDate>Wed, 22 Jan 2025 22:06:05 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/categories/%E8%AF%AD%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Java03</title>
+      <title>Java细知识</title>
       <link>https://zwlzls.github.io/posts/java03/</link>
       <pubDate>Wed, 22 Jan 2025 22:06:05 +0800</pubDate>
       
       <guid>https://zwlzls.github.io/posts/java03/</guid>
-      <description></description>
+      <description>单元测试 单元测试：针对最小的功能单元编写测试代码
+Java程序最小的功能单元是方法，对Java程序进行单元测试就是针对单个方法测试
+测试驱动开发
+先编写接口，紧接着编写测试。编写完测试后，我们才开始真正编写实现代码 举例子
+public class Factorial { public static long fact(long n) { long r = 1; for (long i = 1; i &amp;lt;= n; i++) { r = r * i; } return r; } } 测试这方法，一个很自然的想法是编写一个main()方法，然后运行一些测试代码：
+public class Test { public static void main(String[] args) { if (fact(10) == 3628800) { System.out.println(&amp;#34;pass&amp;#34;); } else { System.out.println(&amp;#34;fail&amp;#34;); } } } 只能有一个main()方法，不能把测试代码分离 是没有打印出测试结果和期望结果，例如，expected: 3628800, but actual: 123456 很难编写一组通用的测试代码 编写JUnit测试 JUnit是一个开源的Java语言的单元测试框架，专门针对Java设计</description>
     </item>
     
   </channel>

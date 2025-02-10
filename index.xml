@@ -6,14 +6,93 @@
     <description>Recent content on 我的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Wed, 22 Jan 2025 22:06:05 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Feb 2025 15:11:19 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Java03</title>
+      <title>Redis01</title>
+      <link>https://zwlzls.github.io/posts/redis01/</link>
+      <pubDate>Mon, 10 Feb 2025 15:11:19 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/redis01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Redis00</title>
+      <link>https://zwlzls.github.io/posts/redis00/</link>
+      <pubDate>Mon, 10 Feb 2025 15:11:14 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/redis00/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mysql01</title>
+      <link>https://zwlzls.github.io/posts/mysql01/</link>
+      <pubDate>Mon, 10 Feb 2025 15:10:54 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/mysql01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Mysql00</title>
+      <link>https://zwlzls.github.io/posts/mysql00/</link>
+      <pubDate>Mon, 10 Feb 2025 15:10:24 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/mysql00/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OS01</title>
+      <link>https://zwlzls.github.io/posts/os01/</link>
+      <pubDate>Mon, 10 Feb 2025 15:10:02 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/os01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>OS00</title>
+      <link>https://zwlzls.github.io/posts/os00/</link>
+      <pubDate>Mon, 10 Feb 2025 15:09:56 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/os00/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Network01</title>
+      <link>https://zwlzls.github.io/posts/network01/</link>
+      <pubDate>Mon, 10 Feb 2025 15:09:41 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/network01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>网络基础</title>
+      <link>https://zwlzls.github.io/posts/network00/</link>
+      <pubDate>Mon, 10 Feb 2025 15:09:37 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/network00/</guid>
+      <description>网络模型 同一台设备上的进程间通信，有很多种方式，比如有管道、消息队列、共享内存、信号等方式
+不同设备上的进程间通信，需要网络通信，而设备是多样性的，协商出了一套通用的网络协议
+TCP/IP网络模型 应用层 最上层的，也是我们能直接接触到的，应用就把应用数据传给下一层，就是传输层 应用层为用户提供应用功能，比如 HTTP、FTP等 传输层 传输层会有两个传输协议，分别是 TCP 和 UDP TCP：大部分应用使用的正是 TCP 传输层协议，比如HTTP。TCP有流量控制、超时重传、拥塞控制等，为保证数据包能可靠地传输给对方 UDP：只负责发送数据包，不保证数据包是否能抵达对方，它实时性相对更好，传输效率也高 应用需要传输的数据可能会非常大，当传输层的数据包大小超过 MSS(TCP 最大报文段长度)，将数据包分块，这样即使中途有一个分块丢失或损坏了，只需要重新发送这一个分块 MTU：一个网络包最大长度，以太网中一般为 1500 字节。 MSS：除去 IP 和 TCP 头部后，一个网络包所能容纳的 TCP 数据的最大长度。 传输层负责把数据包传给应用，但一台设备上会有很多应用接收或者传输数据，用编号将应用区分开来，这个编号是端口 80 端口通常是 Web 服务器用的，22 端口通常是远程登录服务器用的 对于浏览器（客户端）中的每个标签栏都是一个独立的进程，操作系统会为这些进程分配临时的端口号 网络层 传输层协议处理太多的事情，只需要服务好应用即可；而实际的传输功能就交给下一层，也就网络层，负责将数据从一个设备传输到另一个设备 IP 协议将传输层的报文作为数据部分，再加上 IP 包头组装成 IP 报文；如果 IP 报文大小超过 MTU（以太网中一般为 1500 字节）就会再次进行分片，得到一个即将发送到网络的 IP 报文 IP 地址给设备进行编号 IPv4 协议, IP 地址共 32 位，分成了四段（比如192.168.100.1），每段是8位 将 IP 地址分成两种意义： 网络号，负责标识该 IP 地址是属于哪个「子网」的； 主机号，负责标识同一「子网」下的不同主机 配合子网掩码才能算出 IP 地址 的网络号和主机号 比如 10.</description>
+    </item>
+    
+    <item>
+      <title>Java细知识</title>
       <link>https://zwlzls.github.io/posts/java03/</link>
       <pubDate>Wed, 22 Jan 2025 22:06:05 +0800</pubDate>
       
       <guid>https://zwlzls.github.io/posts/java03/</guid>
-      <description></description>
+      <description>单元测试 单元测试：针对最小的功能单元编写测试代码
+Java程序最小的功能单元是方法，对Java程序进行单元测试就是针对单个方法测试
+测试驱动开发
+先编写接口，紧接着编写测试。编写完测试后，我们才开始真正编写实现代码 举例子
+public class Factorial { public static long fact(long n) { long r = 1; for (long i = 1; i &amp;lt;= n; i++) { r = r * i; } return r; } } 测试这方法，一个很自然的想法是编写一个main()方法，然后运行一些测试代码：
+public class Test { public static void main(String[] args) { if (fact(10) == 3628800) { System.out.println(&amp;#34;pass&amp;#34;); } else { System.out.println(&amp;#34;fail&amp;#34;); } } } 只能有一个main()方法，不能把测试代码分离 是没有打印出测试结果和期望结果，例如，expected: 3628800, but actual: 123456 很难编写一组通用的测试代码 编写JUnit测试 JUnit是一个开源的Java语言的单元测试框架，专门针对Java设计</description>
     </item>
     
     <item>
