@@ -13,7 +13,14 @@
       <pubDate>Mon, 10 Feb 2025 15:11:19 +0800</pubDate>
       
       <guid>https://zwlzls.github.io/posts/redis01/</guid>
-      <description></description>
+      <description>持久化 AOF 文件的内容是操作命令； RDB 文件的内容是二进制数据 AOF Redis 中 AOF 持久化功能默认是不开启的，需要我们修改 redis.conf
+Redis 每执行一条写操作命令，就把该命令以追加的方式写入到一个文件里
+这保存写操作命令到日志的持久化方式，是 Redis 里的 AOF(Append Only File) 持久化功能，注意只会记录写操作命令，读操作命令是不会被记录的
+Redis 是先执行写操作命令后，才将该命令记录到 AOF 日志里的
+避免额外的检查开销 不会阻塞当前写操作命令的执行，因为当写操作命令执行成功后，才会将命令记录到 AOF 日志 风险：
+执行写操作命令和记录日志是两个过程，那当 Redis 在还没来得及将命令写入到硬盘时，服务器发生宕机了，这个数据就会有丢失的风险 写操作命令执行成功后才记录到 AOF 日志，所以不会阻塞当前写操作命令的执行，但是可能会给「下一个」命令带来阻塞风险 执行过程：
+Redis 执行完写操作命令后，会将命令追加到 server.aof_buf 缓冲区； 通过 write() 系统调用，将 aof_buf 缓冲区的数据写入到 AOF 文件，此时数据并没有写入到硬盘，而是拷贝到了内核缓冲区 page cache，等待内核将数据写入硬盘； 具体内核缓冲区的数据什么时候写入到硬盘，由内核决定 写回硬盘策略： Always，「总是」，每次写操作命令执行完后，同步将 AOF 日志数据写回硬盘； Everysec，「每秒」，每次写操作命令执行完后，先将命令写入到 AOF 文件的内核缓冲区，每隔一秒将缓冲区里的内容写回到硬盘； No，不由 Redis 控制写回硬盘的时机，转交给操作系统控制写回的时机，也就是每次写操作命令执行完后，先将命令写入到 AOF 文件的内核缓冲区，再由操作系统决定何时将缓冲区内容写回硬盘 AOF重写机制
+AOF 日志是一个文件，随着执行的写操作命令越来越多，文件的大小会越来越大 Redis 为了避免 AOF 文件越写越大，提供了 AOF 重写机制 机制是在重写时，读取当前数据库中的所有键值对，将每一个键值对用一条命令记录到「新的 AOF 文件」，等到全部记录完后，就将新的 AOF 文件替换掉现有的 AOF 文件 妙处在于：尽管某个键值对被多条写命令反复修改，最终也只需要根据这个「键值对」当前的最新状态，然后用一条命令去记录键值对 AOF后台重写</description>
     </item>
     
     <item>
@@ -22,7 +29,11 @@
       <pubDate>Mon, 10 Feb 2025 15:11:14 +0800</pubDate>
       
       <guid>https://zwlzls.github.io/posts/redis00/</guid>
-      <description></description>
+      <description>数据类型及应用 https://onecompiler.com/redis可以进行实践
+String String 是最基本的 key-value 结构，key 是唯一标识，value 是具体的值
+数据结构实现主要是int和SDS
+SDS 不仅可以保存文本数据，还可以保存二进制数据 因为 SDS 使用 len 属性的值判断字符串是否结束 SDS 获取字符串长度的时间复杂度是 O(1) SDS 结构里用 len 属性记录了字符串长度，所以复杂度为 O(1) Redis 的 SDS API 是安全的，拼接字符串不会造成缓冲区溢出 SDS 在拼接字符串之前会检查 SDS 空间是否满足要求，如果空间不够会自动扩容 常用指令
+# 设置 key-value 类型的值 &amp;gt; SET name lin OK # 根据 key 获得对应的 value &amp;gt; GET name &amp;#34;lin&amp;#34; # 判断某个 key 是否存在 &amp;gt; EXISTS name (integer) 1 # 返回 key 所储存的字符串值的长度 &amp;gt; STRLEN name (integer) 3 # 删除某个 key 对应的值 &amp;gt; DEL name (integer) 1 批量设置 :</description>
     </item>
     
     <item>
