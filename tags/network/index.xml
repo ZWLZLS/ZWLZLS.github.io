@@ -6,7 +6,25 @@
     <description>Recent content in Network on 我的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 10 Feb 2025 15:09:37 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 10 Feb 2025 15:09:41 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/tags/network/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Network01</title>
+      <link>https://zwlzls.github.io/posts/network01/</link>
+      <pubDate>Mon, 10 Feb 2025 15:09:41 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/network01/</guid>
+      <description>TCP握手挥手 TCP TCP 是面向连接的、可靠的、基于字节流的传输层通信协议
+面向连接：一定是「一对一」才能连接，不能像 UDP 协议一个主机同时向多个主机发送消息 可靠的：无论的网络链路中出现了怎样的链路变化，TCP 都可以保证一个报文一定能够到达接收端 字节流：用户消息通过 TCP 协议传输时，消息可能会被操作系统「分组」成多个的 TCP 报文，如果接收方的程序不知道「消息的边界」，无法读出一个有效的用户消息的。并且 TCP 报文是「有序的」，当「前一个」TCP 报文没有收到的时候，即使它先收到了后面的 TCP 报文，那么也不能扔给应用层去处理，同时对「重复」的 TCP 报文会自动丢弃 TCP连接
+用于保证可靠性和流量控制维护的某些状态信息，这些信息的组合，包括 Socket、序列号和窗口大小称为连接 Socket：由 IP 地址和端口号组成 序列号：用来解决乱序问题等 窗口大小：用来做流量控制 TCP与UDP区别
+1. 连接
+TCP 是面向连接的传输层协议，传输数据前先要建立连接。 UDP 是不需要连接，即刻传输数据。 2. 服务对象
+TCP 是一对一的两点服务，即一条连接只有两个端点。 UDP 支持一对一、一对多、多对多的交互通信 3. 可靠性
+TCP 是可靠交付数据的，数据可以无差错、不丢失、不重复、按序到达。 UDP 是尽最大努力交付，不保证可靠交付数据。但是可以基于 UDP 传输协议实现一个可靠的传输协议，比如 QUIC 协议 4. 拥塞控制、流量控制
+TCP 有拥塞控制和流量控制机制，保证数据传输的安全性。 UDP 则没有，即使网络非常拥堵了，也不会影响 UDP 的发送速率。 5. 传输方式
+TCP 是流式传输，没有边界，但保证顺序和可靠。 UDP 是一个包一个包的发送，是有边界的，但可能会丢包和乱序。 6. 分片不同
+TCP 的数据大小如果大于 MSS 大小，则会在传输层进行分片，目标主机收到后，也同样在传输层组装 TCP 数据包，如果中途丢失了一个分片，只需要传输丢失的这个分片。 UDP 的数据大小如果大于 MTU 大小，则会在 IP 层进行分片，目标主机收到后，在 IP 层组装完数据，接着再传给传输层 传输层的「端口号」是为了区分同一个主机上不同应用程序的数据包 传输层两个传输协议 TCP 和 UDP，在内核中是两个完全独立的软件模块</description>
+    </item>
+    
     <item>
       <title>网络基础</title>
       <link>https://zwlzls.github.io/posts/network00/</link>
