@@ -6,7 +6,88 @@
     <description>Recent content in Posts on 我的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Feb 2025 21:56:50 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Feb 2025 13:13:09 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Algorithm03</title>
+      <link>https://zwlzls.github.io/posts/algorithm03/</link>
+      <pubDate>Mon, 24 Feb 2025 13:13:09 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/algorithm03/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>算法总结</title>
+      <link>https://zwlzls.github.io/posts/algorithm04/</link>
+      <pubDate>Mon, 24 Feb 2025 13:13:05 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/algorithm04/</guid>
+      <description>以前写的总结 框架思维：
+数据结构的存储方式：数组和链表 任何数据结构无非遍历和访问，在不同的场合高效增删改查 而遍历分为线性和非线性（for/while和递归） 算法心得：
+算法的本质就是无穷举 数组/单链表常用：双指针，二分搜索，滑动窗口，回文子串，前缀和，差分数组 二叉树常用：1.遍历一遍二叉树(递归函数无返回值) 2.分解问题计算答案(递归函数有返回值) 二叉树：
+void traverse(TreeNode root) { if (root == null) { return; } // 前序位置 :进入结点的时候 traverse(root.left); // 中序位置 traverse(root.right); // 后序位置 :离开结点的时候 } 层序遍历：竖while横for 链表：双指针
+设置虚拟结点，用指针来进行变化，同时新建链表注意指明最后一个结点 回溯算法：
+回溯算法是在遍历「树枝」，DFS 算法是在遍历「节点」 我们通过保证元素之间的相对顺序来防止出现重复子集&amp;mdash;-用start变量 标记那些元素可以被选择&amp;mdash;&amp;ndash;用used数组 重复元素中找可能解&amp;mdash;-先排序，用num[i]==num[i-1]来减枝 重复元素的全排列&amp;mdash;-先排序，用num[i]==num[i-1]&amp;amp;&amp;amp;!used[i-1]固定相同数值位置来减枝（规则：相同则前一个必走过），且used[i]标记该数值是否被使用 子集/组合问题必须用start，排列问题必用used数组 数组：
+双指针
+一维前缀和：preSum[i] 记录 nums[0..i-1] 的累加和
+二维前缀和：preSum[i][j] 记录 matrix 中子矩阵 [0, 0, i-1, j-1] 的元素和 对于前缀和问题：申请新数组范围是n+1，数组实际从索引1开始
+差分数组：差分数组的主要适用场景是频繁对原始数组的某个区间的元素进行增减。 后面数据靠前面的差值，diff[i] 就是 nums[i] 和 nums[i-1] 之差 如果你想对区间 nums[i..j] 的元素全部加 3，那么只需要让 diff[i] += 3，然后再让 diff[j+1] -= 3 即可：</description>
+    </item>
+    
+    <item>
+      <title>Algorithm02</title>
+      <link>https://zwlzls.github.io/posts/algorithm02/</link>
+      <pubDate>Mon, 24 Feb 2025 13:13:01 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/algorithm02/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Algorithm01</title>
+      <link>https://zwlzls.github.io/posts/algorithm01/</link>
+      <pubDate>Mon, 24 Feb 2025 13:12:57 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/algorithm01/</guid>
+      <description>Hot100 哈希 两数之和
+class Solution { public int[] twoSum(int[] nums, int target) { HashMap&amp;lt;Integer,Integer&amp;gt;map=new HashMap&amp;lt;&amp;gt;(); int len=nums.length; for(int i=0;i&amp;lt;len;i++){ int p=target-nums[i]; if(map.containsKey(p)){ return new int[]{i,map.get(p)}; } map.put(nums[i],i); } return new int[]{0,0}; } } 字母异位分组
+class Solution { public List&amp;lt;List&amp;lt;String&amp;gt;&amp;gt; groupAnagrams(String[] strs) { HashMap&amp;lt;String,LinkedList&amp;lt;String&amp;gt;&amp;gt;cur=new HashMap&amp;lt;&amp;gt;(); for(String str:strs){ char[] c1=str.toCharArray(); Arrays.sort(c1); String s=String.valueOf(c1); if(!cur.containsKey(s)){ cur.put(s,new LinkedList&amp;lt;&amp;gt;()); cur.get(s).add(str); }else{ cur.get(s).add(str); } } return new LinkedList(cur.values()); } } 最长连续序列：给定一个未排序的整数数组 nums ，找出数字连续的最长序列（不要求序列元素在原数组中连续）的长度
+class Solution { public int longestConsecutive(int[] nums) { int ans = 0; Set&amp;lt;Integer&amp;gt; st = new HashSet&amp;lt;&amp;gt;(); for (int num : nums) { st.</description>
+    </item>
+    
+    <item>
+      <title>Algorithm00</title>
+      <link>https://zwlzls.github.io/posts/algorithm00/</link>
+      <pubDate>Mon, 24 Feb 2025 13:12:54 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/algorithm00/</guid>
+      <description>数据结构 数组 ArrayList`&amp;lt;Integer&amp;gt;`arr=new ArrayList&amp;lt;&amp;gt;();int[]c=new int[3];数组建立 arr.add(99);数组增加 arr.toArray(a);集合变成数组类型 arr.add(3,99);数组插入 arr.get(3);获得元素值 arr.set(3,22);改变元素值 arr.remove(3);移除某索引的元素 Collections.reverse(arr);反转一个arr arr.size();长度	普通数组长度为：length arr.contains(99);是否含有某元素 Collections.sort(arr);集合类的排序 Arrays.sort(c);普通排序 Arrays.fill(c, 1);填充数组c的所有值为1 二维数组排序：第一列按升序排列，第一列相同，则第二列按升序排列 compare方法返回值int类型，返回值大于0，交换两数，小于零，排序正确，等于0，两数相等 Arrays.sort(arr, new Comparator&amp;lt;int[]&amp;gt;() { public int compare(int[] e1, int[] e2) { // 如果第一列元素相等，则比较第二列元素 if (e1[0]==e2[0]) return e1[1]-e2[1]; // e1[1]-e2[1]表示对于第二列元素进行升序排序 return e1[0]-e2[0]; } Arrays.sort(intervals,new Comparator&amp;lt;int[]&amp;gt;(){//两数相减或相加会产生int值溢出，因此通过比较后，直接返回-1，0，1 public int compare(int[]e1,int[]e2){// e1[0]-e2[0]表示对于第一列元素进行升序排序 if(e1[0]&amp;gt;e2[0]){ return 1; }else if(e1[0]==e2[0]){ return 0; }else{ return -1; } } }); Arrays.sort(intervals, (e1, e2) -&amp;gt; Integer.compare(e1[0], e2[0]));//上面可简写 Arrays.sort(strings,(s1,s2)-&amp;gt; (s1+s2).compareTo(s2+s1)); Collections.</description>
+    </item>
+    
+    <item>
+      <title>TestNG</title>
+      <link>https://zwlzls.github.io/posts/testng/</link>
+      <pubDate>Mon, 17 Feb 2025 20:29:33 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/testng/</guid>
+      <description>TestNG TestNG是一个Java语言的测试框架，也是QA最常用的测试框架之一
+TestNG官网文档地址：TestNG 文档 &amp;mdash; TestNG Documentation
+有时间再依据这个重新学下https://lwmzz.blog.csdn.net/article/details/129173343有代码实践 简介 TestNG 是一个测试框架，从单元测试（与其他类隔离的情况下测试一个类）到集成测试（测试由多个类、多个包甚至多个外部框架（如应用服务器）组成的整个系统）
+编写测试通常是一个三步过程：
+编写您测试的业务逻辑，并在您的代码中插入TestNG注解。 到 testng.xml 文件中或在build.xml中添加有关您的测试信息（例如，类名、您希望运行的组等） 运行TestNG 可以在欢迎页面找到一个快速示例
+文档中主要概念：
+套件由一个XML文件表示。可以包含一个或多个测试，并由&amp;lt;suite&amp;gt;标记定义 测试用例由&amp;lt;test&amp;gt;表示，可以包含一个或多个TestNG类 TestNG类是一个包含至少一个TestNG注解的Java类。它由&amp;lt;class&amp;gt;标记表示，可以包含一个或多个测试方法 测试方法是代码中的@Test注解的Java方法 可以通过@BeforeXXX和@AfterXXX注解进行配置，这些注解允许在某个特定点之前和之后执行一些 Java 逻辑，这些点可以是上述列表中的任何一项 其余部分将解释以下内容：
+所有注解的列表以及简要说明。这将让您了解TestNG提供的各种功能，但可能需要查阅专用于每个注解的部分以了解详细信息。 testng.xml文件的说明，语法以及您可以在其中指定的内容。 各种功能的详细列表以及如何结合注解和testng.xml使用它们 注解 以下TestNG中可用注解及其属性的快速概述
+注解：BeforeXXX &amp;amp; AfterXXX
+TestNG类的配置信息：
+@BeforeSuite：在此套件中的所有测试运行之前，将运行带注解的方法。 @AfterSuite：在此套件中的所有测试运行后，将运行带注解的方法。 @BeforeTest：在运行属于&amp;lt;test&amp;gt;标记内的类的任何测试方法之前，将运行带注解的方法。 @AfterTest：在运行属于&amp;lt;test&amp;gt;标记内的类的所有测试方法之后，将运行带注解的方法。 @BeforeGroups：此配置方法之前将运行的组列表。保证在调用属于任何这些组的第一个测试方法之前不久运行此方法。 @AfterGroups：此配置方法将在之后运行的组列表。保证在调用属于任何这些组的最后一个测试方法后不久运行此方法。 @BeforeClass：在调用当前类中的第一个测试方法之前，将运行带注解的方法。 @AfterClass：在运行当前类中的所有测试方法之后，将运行带注解的方法。 @BeforeMethod：带注解的方法将在每个测试方法之前运行。 @AfterMethod：带注解的方法将在每个测试方法之后运行 TestNG类的超类中的注解行为
+超类是指被继承的类
+超类中的注解行为会被继承到子类中。
+执行顺序:
+@Before 类注解 : 从超类到子类 @After 类注解：从子类到超类。 当放置在TestNG类的超类上时，上述注解也将被兑现（继承）。例如，这对于在公共超类中集中多个测试类的测试设置非常有用
+import org.testng.annotations.BeforeClass; import org.testng.annotations.BeforeMethod; import org.testng.annotations.AfterClass; import org.testng.annotations.AfterMethod; public class BaseTest { @BeforeClass public void beforeClass() { System.</description>
+    </item>
+    
     <item>
       <title>Alog00</title>
       <link>https://zwlzls.github.io/posts/alog00/</link>

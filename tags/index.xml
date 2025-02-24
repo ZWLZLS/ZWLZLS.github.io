@@ -6,13 +6,31 @@
     <description>Recent content in Tags on 我的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 16 Feb 2025 21:56:50 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Mon, 24 Feb 2025 13:13:09 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>个人</title>
       <link>https://zwlzls.github.io/tags/%E4%B8%AA%E4%BA%BA/</link>
-      <pubDate>Sun, 16 Feb 2025 21:56:50 +0800</pubDate>
+      <pubDate>Mon, 24 Feb 2025 13:13:09 +0800</pubDate>
       
       <guid>https://zwlzls.github.io/tags/%E4%B8%AA%E4%BA%BA/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>算法</title>
+      <link>https://zwlzls.github.io/tags/%E7%AE%97%E6%B3%95/</link>
+      <pubDate>Mon, 24 Feb 2025 13:13:05 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/tags/%E7%AE%97%E6%B3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>TestNG</title>
+      <link>https://zwlzls.github.io/tags/testng/</link>
+      <pubDate>Mon, 17 Feb 2025 20:29:33 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/tags/testng/</guid>
       <description></description>
     </item>
     
