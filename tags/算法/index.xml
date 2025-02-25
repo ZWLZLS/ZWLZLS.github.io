@@ -26,6 +26,19 @@ void traverse(TreeNode root) { if (root == null) { return; } // 前序位置 :�
     </item>
     
     <item>
+      <title>Algorithm02</title>
+      <link>https://zwlzls.github.io/posts/algorithm02/</link>
+      <pubDate>Mon, 24 Feb 2025 13:13:01 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/algorithm02/</guid>
+      <description>Hot100 二叉树 给定一个二叉树的根节点 root ，返回 它的 中序 遍历
+class Solution { public List&amp;lt;Integer&amp;gt; inorderTraversal(TreeNode root) { List&amp;lt;Integer&amp;gt; res = new ArrayList&amp;lt;Integer&amp;gt;(); Stack&amp;lt;TreeNode&amp;gt; stk = new Stack&amp;lt;TreeNode&amp;gt;(); while (root != null || !stk.isEmpty()) { while (root != null) { stk.push(root); root = root.left; } root = stk.pop(); res.add(root.val); root = root.right; } return res; } } 思考中序过程就行
+给定一个二叉树 root ，返回其最大深度。
+二叉树的 最大深度 是指从根节点到最远叶子节点的最长路径上的节点数。
+class Solution { public int maxDepth(TreeNode root) { return Depth(root); } public int Depth(TreeNode root){ if(root==null){ return 0; } int left=Depth(root.</description>
+    </item>
+    
+    <item>
       <title>Algorithm01</title>
       <link>https://zwlzls.github.io/posts/algorithm01/</link>
       <pubDate>Mon, 24 Feb 2025 13:12:57 +0800</pubDate>
