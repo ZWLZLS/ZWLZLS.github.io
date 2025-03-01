@@ -6,7 +6,33 @@
     <description>Recent content in 数据结构与算法 on 我的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Feb 2025 13:13:05 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Mar 2025 23:37:24 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/categories/%E6%95%B0%E6%8D%AE%E7%BB%93%E6%9E%84%E4%B8%8E%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hot100</title>
+      <link>https://zwlzls.github.io/posts/algorithm05/</link>
+      <pubDate>Sat, 01 Mar 2025 23:37:24 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/algorithm05/</guid>
+      <description>Hot100 贪心算法 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。
+你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
+返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0
+class Solution { public int maxProfit(int[] prices) { if(prices.length==0){ return 0; } int max=0,len=prices.length; int pre=prices[0]; for(int p:prices){ if(p&amp;lt;pre){ pre=p; } max=Math.max(max,p-pre); } return max; } } 给你一个非负整数数组 nums ，你最初位于数组的 第一个下标 。数组中的每个元素代表你在该位置可以跳跃的最大长度。
+判断你是否能够到达最后一个下标，如果可以，返回 true ；否则，返回 false
+class Solution { public boolean canJump(int[] nums) { int n = nums.length; int farthest = 0; for (int i = 0; i &amp;lt; n - 1; i++) { // 不断计算能跳到的最远距离 farthest = Math.</description>
+    </item>
+    
+    <item>
+      <title>Hot100</title>
+      <link>https://zwlzls.github.io/posts/algorithm03/</link>
+      <pubDate>Mon, 24 Feb 2025 13:13:09 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/algorithm03/</guid>
+      <description>Hot100 回溯 给定一个不含重复数字的数组 nums ，返回其 所有可能的全排列 。你可以 按任意顺序 返回答案
+class Solution { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt;res; int len=0; public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; permute(int[] nums) { this.res=new LinkedList&amp;lt;&amp;gt;(); this.len=nums.length; dfs(nums,new LinkedList&amp;lt;&amp;gt;(),new boolean[len]); return res; } public void dfs(int[] nums,LinkedList path,boolean[]p){ if(path.size()==len){ res.add(new LinkedList&amp;lt;&amp;gt;(path)); return; } for(int i=0;i&amp;lt;len;i++){ if(p[i]){ continue; } p[i]=true; path.add(nums[i]); dfs(nums,path,p); p[i]=false; path.remove(path.size()-1); } } } 给你一个整数数组 nums ，数组中的元素 互不相同 。返回该数组所有可能的子集（幂集）。
+解集 不能 包含重复的子集。你可以按 任意顺序 返回解集
+class Solution { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt;res=new LinkedList&amp;lt;&amp;gt;(); LinkedList&amp;lt;Integer&amp;gt;track=new LinkedList&amp;lt;&amp;gt;(); public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; subsets(int[] nums) { backtracking(nums,0); return res; } public void backtracking(int[] nums,int start){ res.</description>
+    </item>
+    
     <item>
       <title>算法总结</title>
       <link>https://zwlzls.github.io/posts/algorithm04/</link>
@@ -26,7 +52,7 @@ void traverse(TreeNode root) { if (root == null) { return; } // 前序位置 :�
     </item>
     
     <item>
-      <title>Algorithm02</title>
+      <title>Hot100</title>
       <link>https://zwlzls.github.io/posts/algorithm02/</link>
       <pubDate>Mon, 24 Feb 2025 13:13:01 +0800</pubDate>
       
@@ -39,7 +65,7 @@ class Solution { public int maxDepth(TreeNode root) { return Depth(root); } publ
     </item>
     
     <item>
-      <title>Algorithm01</title>
+      <title>Hot100</title>
       <link>https://zwlzls.github.io/posts/algorithm01/</link>
       <pubDate>Mon, 24 Feb 2025 13:12:57 +0800</pubDate>
       
@@ -51,7 +77,7 @@ class Solution { public int longestConsecutive(int[] nums) { int ans = 0; Set&am
     </item>
     
     <item>
-      <title>Algorithm00</title>
+      <title>数据结构Java版</title>
       <link>https://zwlzls.github.io/posts/algorithm00/</link>
       <pubDate>Mon, 24 Feb 2025 13:12:54 +0800</pubDate>
       

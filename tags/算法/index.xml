@@ -6,7 +6,48 @@
     <description>Recent content in 算法 on 我的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Mon, 24 Feb 2025 13:13:05 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 01 Mar 2025 23:37:24 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/tags/%E7%AE%97%E6%B3%95/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Hot100</title>
+      <link>https://zwlzls.github.io/posts/algorithm05/</link>
+      <pubDate>Sat, 01 Mar 2025 23:37:24 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/algorithm05/</guid>
+      <description>Hot100 贪心算法 给定一个数组 prices ，它的第 i 个元素 prices[i] 表示一支给定股票第 i 天的价格。
+你只能选择 某一天 买入这只股票，并选择在 未来的某一个不同的日子 卖出该股票。设计一个算法来计算你所能获取的最大利润。
+返回你可以从这笔交易中获取的最大利润。如果你不能获取任何利润，返回 0
+class Solution { public int maxProfit(int[] prices) { if(prices.length==0){ return 0; } int max=0,len=prices.length; int pre=prices[0]; for(int p:prices){ if(p&amp;lt;pre){ pre=p; } max=Math.max(max,p-pre); } return max; } } 给你一个非负整数数组 nums ，你最初位于数组的 第一个下标 。数组中的每个元素代表你在该位置可以跳跃的最大长度。
+判断你是否能够到达最后一个下标，如果可以，返回 true ；否则，返回 false
+class Solution { public boolean canJump(int[] nums) { int n = nums.length; int farthest = 0; for (int i = 0; i &amp;lt; n - 1; i++) { // 不断计算能跳到的最远距离 farthest = Math.</description>
+    </item>
+    
+    <item>
+      <title>数据结构知识</title>
+      <link>https://zwlzls.github.io/posts/algorithm06/</link>
+      <pubDate>Wed, 26 Feb 2025 23:38:15 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/algorithm06/</guid>
+      <description>数据结构 数据结构知识 具体内容
+数组：数组的内存空间是连续的，随机访问的时间复杂度是O1，适用于需要按索引访问元素的场景，但是插入和删除元素较慢，时间复杂度是On 链表：链表是由节点组成，节点之间是分散存储的，内存不连续，每个节点存储数据和指向下一个节点的指针。适用于频繁插入和删除元素的场景，随机访问元素较慢 栈：栈是一种后进先出的数据结构，只允许在栈顶进行插入和删除操作 队列：队列是一种先进先出（FIFO）的数据结构，允许在队尾插入元素，在队首删除元素 树：树是一种非线性数据结构，由节点和边组成，每个节点可以有多个子节点。树适用于表示层次关系的场景，例如文件系统、组织结构等 数组与链表区别？
+访问效率，插入和删除操作效率，缓存命中率 应用场景：数组适合静态大小、频繁访问元素的场景，而链表适合动态大小、频繁插入、删除操作的场景 平衡二叉树
+二叉搜索树：一棵二叉树，可以为空；如果不为空，满足以下性质： 非空左子树的所有键值小于其根结点的键值。 非空右子树的所有键值大于其根结点的键值。 左、右子树都是二叉搜索树。 二叉树搜索树的目的：缩短插入、删除、修改和查找节点的时间 一棵理想的二叉搜索树所有操作的时间可以缩短到 O(logn) 一棵每个结点只有右孩子的二叉搜索树，那么性质就和链表一样 平衡树将二叉查找树平衡均匀地分布，好处就是可以减少二叉查找树的深度 平衡二叉树平衡的特性： 左右两个子树的高度差（平衡因子）的绝对值不超过1 左右两个子树都是一棵平衡二叉树 红黑树
+每个节点要么是红色，要么是黑色。 根节点是黑色。 每个叶子节点（NIL节点）是黑色。 如果一个节点是红色，则其子节点必须是黑色。 从任一节点到其每个叶子节点的所有路径都包含相同数目的黑色节点。 二叉查找树
+当每次插入的元素都是二叉查找树中最大的元素，二叉查找树就会退化成了一条链表，查找数据的时间复杂度变成了 O(n) 平衡二叉查找树 每个节点的左子树和右子树的高度差不能超过 1。也就是说节点的左子树和右子树仍然为平衡二叉树，这样查询操作的时间复杂度就会一直维持在 O(logn) B+树
+B+树是一种自平衡的多路查找树，所有叶节点都位于同一层，保证了树的平衡，使得搜索、插入和删除操作的时间复杂度为对数级别的 非叶节点仅包含索引信息，不存储具体的数据记录，用来引导搜索到正确的叶节点 所有数据记录都存储在叶节点中，且叶节点中的数据是按关键字排序的。叶节点包含实际的数据和关键字，是数据存储和检索的实体单元。叶节点之间通过指针相互链接，形成一个链表，便于范围查询和顺序遍历 </description>
+    </item>
+    
+    <item>
+      <title>Hot100</title>
+      <link>https://zwlzls.github.io/posts/algorithm03/</link>
+      <pubDate>Mon, 24 Feb 2025 13:13:09 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/algorithm03/</guid>
+      <description>Hot100 回溯 给定一个不含重复数字的数组 nums ，返回其 所有可能的全排列 。你可以 按任意顺序 返回答案
+class Solution { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt;res; int len=0; public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; permute(int[] nums) { this.res=new LinkedList&amp;lt;&amp;gt;(); this.len=nums.length; dfs(nums,new LinkedList&amp;lt;&amp;gt;(),new boolean[len]); return res; } public void dfs(int[] nums,LinkedList path,boolean[]p){ if(path.size()==len){ res.add(new LinkedList&amp;lt;&amp;gt;(path)); return; } for(int i=0;i&amp;lt;len;i++){ if(p[i]){ continue; } p[i]=true; path.add(nums[i]); dfs(nums,path,p); p[i]=false; path.remove(path.size()-1); } } } 给你一个整数数组 nums ，数组中的元素 互不相同 。返回该数组所有可能的子集（幂集）。
+解集 不能 包含重复的子集。你可以按 任意顺序 返回解集
+class Solution { List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt;res=new LinkedList&amp;lt;&amp;gt;(); LinkedList&amp;lt;Integer&amp;gt;track=new LinkedList&amp;lt;&amp;gt;(); public List&amp;lt;List&amp;lt;Integer&amp;gt;&amp;gt; subsets(int[] nums) { backtracking(nums,0); return res; } public void backtracking(int[] nums,int start){ res.</description>
+    </item>
+    
     <item>
       <title>算法总结</title>
       <link>https://zwlzls.github.io/posts/algorithm04/</link>
@@ -26,7 +67,7 @@ void traverse(TreeNode root) { if (root == null) { return; } // 前序位置 :�
     </item>
     
     <item>
-      <title>Algorithm02</title>
+      <title>Hot100</title>
       <link>https://zwlzls.github.io/posts/algorithm02/</link>
       <pubDate>Mon, 24 Feb 2025 13:13:01 +0800</pubDate>
       
@@ -39,7 +80,7 @@ class Solution { public int maxDepth(TreeNode root) { return Depth(root); } publ
     </item>
     
     <item>
-      <title>Algorithm01</title>
+      <title>Hot100</title>
       <link>https://zwlzls.github.io/posts/algorithm01/</link>
       <pubDate>Mon, 24 Feb 2025 13:12:57 +0800</pubDate>
       
@@ -51,7 +92,7 @@ class Solution { public int longestConsecutive(int[] nums) { int ans = 0; Set&am
     </item>
     
     <item>
-      <title>Algorithm00</title>
+      <title>数据结构Java版</title>
       <link>https://zwlzls.github.io/posts/algorithm00/</link>
       <pubDate>Mon, 24 Feb 2025 13:12:54 +0800</pubDate>
       

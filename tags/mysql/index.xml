@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Mon, 10 Feb 2025 15:10:54 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/tags/mysql/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Mysql01</title>
+      <title>Mysql事务日志锁</title>
       <link>https://zwlzls.github.io/posts/mysql01/</link>
       <pubDate>Mon, 10 Feb 2025 15:10:54 +0800</pubDate>
       
@@ -20,7 +20,7 @@
     </item>
     
     <item>
-      <title>Mysql00</title>
+      <title>Mysql索引查询</title>
       <link>https://zwlzls.github.io/posts/mysql00/</link>
       <pubDate>Mon, 10 Feb 2025 15:10:24 +0800</pubDate>
       

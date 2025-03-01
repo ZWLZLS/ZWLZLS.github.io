@@ -8,7 +8,7 @@
     <language>en</language>
     <lastBuildDate>Tue, 07 Jan 2025 23:41:00 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/tags/git/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>Git01</title>
+      <title>Git实战</title>
       <link>https://zwlzls.github.io/posts/git01/</link>
       <pubDate>Tue, 07 Jan 2025 23:41:00 +0800</pubDate>
       
@@ -31,7 +31,7 @@ git diff --check，它将会找到可能的空白错误并将它们为你列出�
     </item>
     
     <item>
-      <title>Git00</title>
+      <title>Git基本</title>
       <link>https://zwlzls.github.io/posts/git00/</link>
       <pubDate>Sun, 05 Jan 2025 15:03:12 +0800</pubDate>
       
