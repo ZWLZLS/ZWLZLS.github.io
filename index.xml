@@ -6,7 +6,62 @@
     <description>Recent content on 我的博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 06 Mar 2025 22:44:21 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Wed, 02 Apr 2025 23:55:41 +0800</lastBuildDate><atom:link href="https://zwlzls.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Jmeter03</title>
+      <link>https://zwlzls.github.io/posts/jmeter03/</link>
+      <pubDate>Wed, 02 Apr 2025 23:55:41 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/jmeter03/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jmeter02</title>
+      <link>https://zwlzls.github.io/posts/jmeter02/</link>
+      <pubDate>Wed, 02 Apr 2025 23:55:33 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/jmeter02/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jmeter01</title>
+      <link>https://zwlzls.github.io/posts/jmeter01/</link>
+      <pubDate>Wed, 02 Apr 2025 23:55:29 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/jmeter01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Jmeter00</title>
+      <link>https://zwlzls.github.io/posts/jmeter00/</link>
+      <pubDate>Wed, 02 Apr 2025 23:55:25 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/jmeter00/</guid>
+      <description>内容来自用户手册_Apache JMeter中文网进行重点摘要
+入门 概述 计划构建 在GUI模式下运行JMeter </description>
+    </item>
+    
+    <item>
+      <title>UnitTest01</title>
+      <link>https://zwlzls.github.io/posts/unittest01/</link>
+      <pubDate>Wed, 26 Mar 2025 21:37:13 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/unittest01/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>UnitTest00</title>
+      <link>https://zwlzls.github.io/posts/unittest00/</link>
+      <pubDate>Wed, 26 Mar 2025 21:37:10 +0800</pubDate>
+      
+      <guid>https://zwlzls.github.io/posts/unittest00/</guid>
+      <description> 以下内容来自《单元测试之道Java版》 简介 **单元测试：**开发者编写的一小段代码，用于检验被测代码的一个很小的，很明确的功能是否正确。或言之，用于判断某个特定条件下特定函数的行为。 执行单元测试：证明某段代码的行为确实和开发者所期望的一致 意义： </description>
+    </item>
+    
     <item>
       <title>Ddia02</title>
       <link>https://zwlzls.github.io/posts/ddia02/</link>
@@ -591,7 +646,7 @@ Linux系统里面账户，密码，群组目录
       
       <guid>https://zwlzls.github.io/about/</guid>
       <description>个人介绍 自己总会忘记一些知识，如果不去记录容易迷茫，记录可让自己变得踏实，学习内容依据公开内容，也可以系统性知识建立，固有此网站，网站诞生于2024-12-25，开始写于2025-01-05，此网站与未来就业公司无关。
-如果有人看到，本网站内容不一定对，即使过往知识也会随时间更改，希望不要以此为核心，以官网为核心，如果有文章涉及侵权等等行为，联系QQ：2994336613，我不用于商业行为，只是自己记录学习，内容都是自己整理，希望各位理解。
+如果有人看到，本网站内容不一定对，即使过往知识也会随时间更改，希望不要以此为核心，以官网为核心。有的文章只有题目，没内容，是将要写。如果有文章涉及侵权等等行为，联系QQ：2994336613，我不用于商业行为，只是自己记录学习，内容都是自己整理，希望各位理解。
 祝愿看到此网站的人都可以 美好的事情即将发生</description>
     </item>
     
